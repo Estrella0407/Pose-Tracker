@@ -38,7 +38,7 @@ app = FastAPI(title="Yoga Pose Scoring API")
 # CORS — allow the React frontend dev server
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "https://realtime-hpe-application.vercel.app"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "https://realtime-hpe-application.vercel.app, https://pose-tracker-five.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
